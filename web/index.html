@@ -6,9 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>road-sdl2-rash: Road Rash (1996) Web Edition</title>
   <style>
+    @font-face {
+      font-family: "Prince of Persia";
+      src: url("data:font/woff2;base64,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") format("woff2"),
+           url("PrinceOfPersia.woff2") format("woff2"),
+           url("PrinceOfPersia.woff") format("woff"),
+           url("PrinceOfPersia.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
     * { box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-family: "Prince of Persia", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace, sans-serif;
+      letter-spacing: 0.5px;
       margin: 0;
       padding: 0;
       background-color: #0f1015;
@@ -17,6 +29,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      -webkit-font-smoothing: none;
+      -moz-osx-font-smoothing: grayscale;
+      image-rendering: pixelated;
     }
 
     header {
@@ -35,7 +50,8 @@
       gap: 12px;
     }
     .brand-title {
-      font-size: 20px;
+      font-family: "Prince of Persia", monospace, sans-serif;
+      font-size: 22px;
       font-weight: 800;
       letter-spacing: 1px;
       color: #fbbf24;
@@ -43,6 +59,7 @@
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
     }
     .brand-badge {
+      font-family: "Prince of Persia", monospace, sans-serif;
       font-size: 11px;
       background: #dc2626;
       color: #fff;
@@ -66,6 +83,7 @@
       user-select: none;
     }
     .btn {
+      font-family: "Prince of Persia", monospace, sans-serif;
       background: #f59e0b;
       color: #000;
       border: none;
@@ -165,6 +183,7 @@
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
     }
     .upload-card h2 {
+      font-family: "Prince of Persia", monospace, sans-serif;
       margin: 0 0 8px 0;
       font-size: 22px;
       font-weight: 800;
@@ -198,7 +217,8 @@
       margin-bottom: 12px;
     }
     .drop-text {
-      font-size: 16px;
+      font-family: "Prince of Persia", monospace, sans-serif;
+      font-size: 17px;
       font-weight: 700;
       color: #f3f4f6;
       margin-bottom: 4px;
@@ -351,6 +371,19 @@
     </div>
 
     <textarea id="output" rows="6" readonly></textarea>
+
+    <!-- Controls & Quick Guide -->
+    <div style="width: 100%; max-width: 960px; margin-top: 16px; padding: 16px 20px; background: #181920; border: 1px solid #27272a; border-radius: 8px;">
+      <div style="font-family: 'Prince of Persia', monospace, sans-serif; font-size: 16px; color: #fbbf24; margin-bottom: 10px; text-transform: uppercase;">HOW TO PLAY (CONTROLS):</div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 8px; font-size: 13px; color: #d1d5db; line-height: 1.6;">
+        <div><strong style="color: #60a5fa;">Accelerate</strong> : UP Arrow / Gamepad RT / Button A</div>
+        <div><strong style="color: #f87171;">Brake</strong> : DOWN Arrow / Gamepad LT / Button B</div>
+        <div><strong style="color: #34d399;">Steer / Lean</strong> : LEFT / RIGHT Arrow / Left Stick</div>
+        <div><strong style="color: #fbbf24;">Combat</strong> : SPACE / CTRL / Gamepad X / Y</div>
+        <div><strong style="color: #e5e7eb;">Pause / Menu</strong> : ENTER / Gamepad Start</div>
+        <div><strong style="color: #a78bfa;">Options Menu</strong> : F10 (CRT Shaders, Audio, Pacing)</div>
+      </div>
+    </div>
   </main>
 
   <footer>
