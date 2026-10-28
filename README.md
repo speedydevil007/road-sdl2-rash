@@ -1,10 +1,10 @@
-# Road Rash (1996 PC): Native Recompilation & Web Port
+# road-sdl2-rash: Road Rash (1996 PC) Native Port & Web Edition
 
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20Steam%20Deck%20%7C%20Web-blue.svg)](#editions--platforms)
 [![License](https://img.shields.io/badge/License-GPL%20%2F%20MIT%20Platform-green.svg)](#licenses--legal)
 [![GitHub Pages](https://img.shields.io/badge/Web%20Port-Live%20Ready-orange.svg)](#3-web-browser)
 
-A modern, native 64-bit port and WebAssembly release of the classic 1996 PC title **Road Rash**, translated directly from original x86 machine code into portable C over an **SDL2** platform layer.
+**road-sdl2-rash** is a modern, native 64-bit port and WebAssembly release of the classic 1996 PC title **Road Rash**, translated directly from original x86 machine code into portable C over an **SDL2** platform layer.
 
 Runs natively at full speed on **Windows 10/11**, **Linux**, **Steam Deck**, and in **Modern Web Browsers** (WebAssembly + WebGL).
 
