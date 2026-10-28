@@ -28,6 +28,36 @@ Runs natively at full speed on **Windows 10/11**, **Linux**, **Steam Deck**, and
 
 ---
 
+## Original vs Road Rash Plus
+
+Side-by-side live comparison running on the Napa Valley course with in-game FPS counters:
+
+![Road Rash Original vs Plus Comparison](assets/comparison_preview.png)
+
+* **Left (Original 1996):** Authentic 640×480 software rendering, original unpaced timing (`original`).
+* **Right (Road Rash Plus):** 1280×960 High-Resolution software rasterizer, rock-solid 60 FPS presentation (`smooth` locked, 0 judder).
+
+> [!TIP]
+> **Gameplay Media:**
+> * Watch the [30-Second Side-by-Side Comparison Video (MP4)](assets/comparison_30s.mp4)
+> * View the [High-Quality Animated Comparison (GIF)](assets/comparison_30s.gif)
+
+---
+
+## Startup Welcome Screen
+
+On startup across all platforms (Windows, Linux, Steam Deck, Web), **road-sdl2-rash** displays an interactive welcome screen:
+
+| Vanilla Edition (1996 Authentic) | Road Rash Plus Edition (Enhanced) |
+| :---: | :---: |
+| ![Vanilla Welcome Screen](assets/welcome_vanilla.png) | ![Plus Welcome Screen](assets/welcome_plus.png) |
+| *Authentic 1996 balance, no QoL modifications* | *1280×960 High-Res, 60 FPS pacing, F10 options, mods.ini* |
+
+* Press **TAB** on the welcome screen at any time to switch between **Vanilla** and **Plus** mode.
+* Press **ENTER** or **SPACE** (or Gamepad Start / A) to dismiss and start racing!
+
+---
+
 ## Editions & Platforms
 
 ### 1. Standard (Vanilla 1996) Mode
