@@ -30,28 +30,48 @@ Runs natively at full speed on **Windows 10/11**, **Linux**, **Steam Deck**, and
 
 ## Original vs Road Rash Plus
 
-Side-by-side live comparison running on the Napa Valley course with in-game FPS counters:
-
-![Road Rash Original vs Plus Comparison](assets/comparison_preview.png)
-
-* **Left (Original 1996):** Authentic 640×480 software rendering, original unpaced timing (`original`).
-* **Right (Road Rash Plus):** 1280×960 High-Resolution software rasterizer, rock-solid 60 FPS presentation (`smooth` locked, 0 judder).
-
-> [!TIP]
-> **Gameplay Media:**
-> * Watch the [30-Second Side-by-Side Comparison Video (MP4)](assets/comparison_30s.mp4)
-> * View the [High-Quality Animated Comparison (GIF)](assets/comparison_30s.gif)
+| Feature | Vanilla Edition (1996 Authentic) | Road Rash Plus Edition (Enhanced) |
+| :--- | :--- | :--- |
+| **Internal Resolution** | 640×480 software rasterizer | 1280×960 High-Resolution software rasterizer |
+| **Frame Pacing & VSync** | Original unpaced timing (`original`) | Rock-solid 60 FPS presentation (`smooth` locked, 0 judder) |
+| **Typography & HUD** | Classic Prince of Persia retro arcade font | Classic Prince of Persia retro arcade font |
+| **In-Game Options (F10)** | Original fixed settings | Dynamic CRT shaders, audio mixing, controller rebinds |
+| **Modding Support** | Standard data files | Hot-reloadable `port/userdata/mods.ini` configuration |
+| **Audio Engine** | Legacy DirectSound emulation | TinySoundFont high-definition SoundFont playback |
 
 ---
 
 ## Startup Welcome Screen
 
-On startup across all platforms (Windows, Linux, Steam Deck, Web), **road-sdl2-rash** displays an interactive welcome screen:
+On startup across all platforms (Windows, Linux, Steam Deck, Web), **road-sdl2-rash** greets the player with an interactive welcome screen styled with the classic retro font:
 
-| Vanilla Edition (1996 Authentic) | Road Rash Plus Edition (Enhanced) |
-| :---: | :---: |
-| ![Vanilla Welcome Screen](assets/welcome_vanilla.png) | ![Plus Welcome Screen](assets/welcome_plus.png) |
-| *Authentic 1996 balance, no QoL modifications* | *1280×960 High-Res, 60 FPS pacing, F10 options, mods.ini* |
+```
++--------------------------------------------------------------------+
+|                           ROAD-SDL2-RASH                           |
+|            Decomp & Recomp with SDL2 by speedydevil007             |
+|                                                                    |
+|                    [ ROAD RASH PLUS EDITION ]                      |
+|                                                                    |
+|  Enhanced 1280x960 High-Res graphics with 60 FPS pacing.           |
+|  Press F10 for options & QoL | Mod with port/userdata/mods.ini     |
+|                                                                    |
+|  GAME MODES:                                                       |
+|  * Thrash     : Pure arcade racing across 5 scenic tracks.         |
+|  * Big Game   : Career mode with cash, bike shops, and cops.       |
+|  * Mano a Mano: Head-to-head 2-player split/duel action.           |
+|                                                                    |
+|  HOW TO PLAY (CONTROLS):                                           |
+|  Accelerate  : UP Arrow       / Gamepad RT / Button A              |
+|  Brake       : DOWN Arrow     / Gamepad LT / Button B              |
+|  Steer       : LEFT / RIGHT   / Gamepad Left Stick / D-Pad         |
+|  Combat      : SPACE / CTRL   / Gamepad X / Y (Punch/Kick/Club)    |
+|  Pause/Menu  : ENTER          / Gamepad Start                      |
+|  Fullscreen  : F11 / ALT+ENTER | Options Menu: F10                 |
+|                                                                    |
+|                >>> Press ENTER or SPACE to Race <<<                |
+|                  [TAB: Switch Vanilla / Plus Mode]                 |
++--------------------------------------------------------------------+
+```
 
 * Press **TAB** on the welcome screen at any time to switch between **Vanilla** and **Plus** mode.
 * Press **ENTER** or **SPACE** (or Gamepad Start / A) to dismiss and start racing!

@@ -31,3 +31,6 @@ build/
 # Private local developer notes and credentials (NEVER commit to GitHub)
 local-notes/
 
+# Local media assets (videos, gifs, preview captures - local only)
+assets/
+
