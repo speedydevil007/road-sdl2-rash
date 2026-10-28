@@ -56,6 +56,26 @@ Runs natively at full speed on **Windows 10/11**, **Linux**, **Steam Deck**, and
 
 ---
 
+## Compatibility & System Requirements
+
+| Platform | Runs on | Needs | Tested so far |
+| :--- | :--- | :--- | :--- |
+| **Windows** | Windows 10 or 11, 64-bit | Nothing to install (`SDL2.dll` ships next to the exe) | Scripted races without a window match the reference result on Windows 11 |
+| **Windows 7 / 8.1** | Likely, 64-bit only | Microsoft's Universal C Runtime update ([KB2999226](https://support.microsoft.com/kb/2999226)) | Not tested |
+| **Linux** | Any 64-bit (x86-64) distribution from 2012 on: glibc 2.17 or newer (Ubuntu 14.04+, Debian 8+, CentOS 7+, Fedora, Arch, Mint, SteamOS, …) | Nothing to install: SDL2 is built into the program. Uses X11 or Wayland, and PulseAudio (PipeWire included) or ALSA, whichever the system has | Scripted races without a window match the reference result on Ubuntu 22.04; a race started through `roadrash.sh` on Ubuntu 14.04, also without a window |
+| **Steam Deck** | SteamOS 3 (Desktop or Gaming Mode) | Nothing to install | Not yet run on a Deck |
+| **Web** | A current desktop browser with WebAssembly | A web server (`serve.py` or any static host) and `index.data` (about 77 MB, downloaded before the game starts) | A scripted race in Chrome without a window |
+
+**Not supported:** macOS, ARM computers (Raspberry Pi, ARM Chromebooks, Apple Silicon) and 32-bit systems have no native program. The web version is the way to play on those, but it has not been tested there.
+
+**Not tested yet:** playing with a window and sound on Windows or a Linux desktop, the Steam Deck, and Edge, Firefox and Safari. Reports are welcome.
+
+**Disk space:** the program folder (38 MB on Windows, 54 MB on Linux, 7 MB for the web) plus the original game's files (about 43 MB; for the web, `index.data` is about 77 MB). No minimum CPU or GPU has been measured; the game runs at its original 640×480 (1280×960 in high resolution) through SDL2.
+
+*Requirements and test status as of 2026-10-28.*
+
+---
+
 ## Getting Started ("Bring Your Own Game")
 
 To respect copyright laws and preservation standards, **no proprietary game assets are hosted in this repository**. You provide the assets from your original 1996 PC copy of Road Rash (CD-ROM or ISO).
