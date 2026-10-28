@@ -1,0 +1,47 @@
+# ==============================================================================
+# Road Rash Plus — Enhanced Preset
+# ==============================================================================
+# To use this preset: rename or copy this file to "mods.ini" in this folder.
+#
+# This preset enables the "Road Rash Plus" experience:
+# - Slightly reduced aerodynamic drag for higher, more thrilling top speeds
+# - Tighter, more responsive braking on the starter bike
+# - Dynamic rival feuds and grudge warfare across the entire field
+# - Aggressive rival chasing to keep races competitive
+# ==============================================================================
+
+# --- Traffic ---
+# traffic_speed_scalar = 25
+
+# --- Starter Bike (Corsair Swallow) Tuning ---
+# Boost brake strength (-40 to -120 is original; -150 provides sharp braking)
+bike.swallow.brakes = -150
+
+# --- Physics & Handling ---
+# 70% air drag gives ~30% higher top speed on straightaways
+physics_air_drag_percent = 70
+
+# Better offroad traction so shoulder recovery is more responsive
+physics_offroad_grip_percent = 130
+physics_offroad_drag_percent = 80
+
+# --- Field Size ---
+racer_count = 15
+
+# --- Rival AI: Pace & Chasing ---
+# Rivals stay competitive and don't fall excessively far behind
+rival_pace_percent = 110
+rival_chase_percent = 150
+
+# --- Rival AI: Grudge Feuds & Combat ---
+# Increase attacks between rivals (creates intense brawls around you)
+rival_feud_percent = 200
+
+# Rivals target the player more often when riding side-by-side
+rival_grudge_player_percent = 150
+
+# When a racer gets hit, they retaliate with lasting grudges
+rival_retaliation_percent = 150
+
+# Allow rivals to also fight the lower-tier riders (slots 9..14)
+rival_grudge_generic_percent = 100

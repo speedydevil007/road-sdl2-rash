@@ -1,0 +1,29 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+
+# User save data and logs
+*.log
+*.RRS
+port/userdata/saves/
+port/userdata/last_run.log
+
+# Original 1996 proprietary game assets (BYOG policy)
+ROADRASH.EXE
+roadrash.exe
+AUDIO/
+audio/
+DATA/
+data/
+IMAGES/
+images/
+TEXT/
+text/
+index.data
+3-game-files/
+
+# Local build artifacts
+build/
+*.part
