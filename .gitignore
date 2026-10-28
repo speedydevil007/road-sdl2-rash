@@ -27,3 +27,7 @@ index.data
 # Local build artifacts
 build/
 *.part
+
+# Private local developer notes and credentials (NEVER commit to GitHub)
+local-notes/
+
