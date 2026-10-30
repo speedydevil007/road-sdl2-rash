@@ -234,6 +234,30 @@ The complete source code that powers this native port will be released in an upc
 
 ---
 
+## Cryptographic Release Verification
+
+Official release assets, git commits, and tags are cryptographically signed by **speedydevil007** using GPG to guarantee authenticity and integrity.
+
+* **Signer:** `speedydevil007 <349187409+speedydevil007@users.noreply.github.com>`
+* **GPG Key ID:** `7FA03C6926F817D3`
+* **Key Fingerprint:** `CBE3 BDA4 A213 BFD1 56B9  2042 7FA0 3C69 26F8 17D3`
+* **Public Key:** Included in repository as [RELEASE_KEY.pub](RELEASE_KEY.pub)
+
+### Verifying Release Assets
+
+```bash
+# 1. Import speedydevil007's public key
+gpg --import RELEASE_KEY.pub
+
+# 2. Verify the cryptographic signature on the checksum manifest
+gpg --verify SHA256SUMS.asc SHA256SUMS
+
+# 3. Verify file hashes
+sha256sum --check SHA256SUMS
+```
+
+---
+
 ## Licenses & Legal
 
 * **Road Rash** is a registered trademark of Electronic Arts Inc.
