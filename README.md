@@ -8,7 +8,7 @@
 
 Runs natively at full speed on **Windows 10/11**, **Linux**, **Steam Deck**, and in **Modern Web Browsers** (WebAssembly + WebGL).
 
-I've been working on reverse engineering, lifting, and rebuilding this project for the last 1.5 years, and it is now finally ready for release!
+**A 1.5-Year Milestone:** I've been working on reverse engineering, lifting, and rebuilding this project for the last 1.5 years, and it is now finally ready for release! Thanks to LLMs.
 
 > [!NOTE]
 > **Source Code Release:** The complete decompiled C source code (~97,000 lines of structured, typed, human-readable C with modding hooks and tools) is undergoing final code cleanup and will be open-sourced soon!
