@@ -15,6 +15,34 @@ Runs natively at full speed on **Windows 10/11**, **Linux**, **Steam Deck**, and
 
 ---
 
+## Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/screenshot_01_welcome_plus.png" width="48%" alt="Startup Welcome Screen (Plus Mode)">
+  <img src="docs/screenshots/screenshot_03_settings_overlay_f10.png" width="48%" alt="F10 Settings & QoL Overlay">
+</p>
+<p align="center">
+  <em>Startup Welcome Screen (Plus Edition) &bull; Newly Added F10 Settings &amp; QoL Menu Overlay</em>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/screenshot_05_in_race_gameplay_plus.png" width="48%" alt="In-Race High-Res 60 FPS Gameplay">
+  <img src="docs/screenshots/screenshot_06_in_race_action.png" width="48%" alt="Live Pack Racing Action">
+</p>
+<p align="center">
+  <em>High-Res 1280&times;960 In-Race Gameplay &bull; Live Pack Racing &amp; Rival Jostling Action</em>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/screenshot_04_main_menu.png" width="48%" alt="Retro Main Menu">
+  <img src="docs/screenshots/screenshot_07_in_race_settings_f10.png" width="48%" alt="In-Race F10 Settings Menu">
+</p>
+<p align="center">
+  <em>Classic 1996 Main Menu Screen &bull; Mid-Race Real-Time Settings Adjustment</em>
+</p>
+
+---
+
 ## Key Features
 
 * **100% Native 64-bit Execution:** No DOSBox, emulators, or Wine needed. Compiles and executes directly on modern operating systems.
