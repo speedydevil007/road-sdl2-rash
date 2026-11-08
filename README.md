@@ -1,5 +1,6 @@
 # road-sdl2-rash: Road Rash (1996 PC) Native Port & Web Edition
 
+[![Verified developer on RecompStore](https://recompstore.com/assets/press/verified-dark.svg)](https://recompstore.com/dev/speedydevil007)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20Steam%20Deck%20%7C%20Web-blue.svg)](#editions--platforms)
 [![License](https://img.shields.io/badge/License-GPL%20%2F%20MIT%20Platform-green.svg)](#licenses--legal)
 [![GitHub Pages](https://img.shields.io/badge/Web%20Port-Live%20Ready-orange.svg)](#3-web-browser)
