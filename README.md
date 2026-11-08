@@ -1,6 +1,7 @@
 # road-sdl2-rash: Road Rash (1996 PC) Native Port & Web Edition
 
 [![Verified developer on RecompStore](https://recompstore.com/assets/press/verified-dark.svg)](https://recompstore.com/dev/speedydevil007)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20Project-ff5e5b?logo=ko-fi&logoColor=white)](https://ko-fi.com/speedydevil007)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20Steam%20Deck%20%7C%20Web-blue.svg)](#editions--platforms)
 [![License](https://img.shields.io/badge/License-GPL%20%2F%20MIT%20Platform-green.svg)](#licenses--legal)
 [![GitHub Pages](https://img.shields.io/badge/Web%20Port-Live%20Ready-orange.svg)](#3-web-browser)
@@ -259,6 +260,20 @@ The complete source code that powers this native port will be released in an upc
 * **~97,000 Lines of Structured C:** 59 modular subsystem files covering bike physics, rival AI algorithms, course generation, software projection rasterizer, and audio synthesis.
 * **Readable & Modder-Friendly:** Structured loops (`for`, `while`), folded conditional expressions (`&&`, `||`), 1,748 named functions, and 194 named record types.
 * **Custom Hooking System:** Write your own C hooks around any game function without modifying original disassembly.
+
+---
+
+## Support the Project
+
+If you enjoy playing this modern port or appreciate the 1.5 years of reverse engineering and binary lifting work that went into reviving Road Rash (1996 PC), consider buying me a coffee!
+
+<p align="left">
+  <a href="https://ko-fi.com/speedydevil007">
+    <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support on Ko-fi" height="36">
+  </a>
+</p>
+
+Your support directly funds ongoing retro game preservation, source code cleanup, additional platform testing, and future feature developments.
 
 ---
 
