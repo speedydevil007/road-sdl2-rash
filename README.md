@@ -303,6 +303,14 @@ sha256sum --check SHA256SUMS
 
 ---
 
+## Special Thanks & Community Credits
+
+A big thank you to the awesome community members helping test, debug, and refine **road-sdl2-rash**:
+* **[@sergiofrias](https://github.com/sergiofrias)** — For diagnosing the initial scrambled gamepad mappings, sharing disassembly and hex analysis, and testing virtual key codes (Issue #1).
+* **[@adrianflk](https://github.com/adrianflk)** — For flagging the classic `F10` HUD toggle conflict, identifying the "Configure Input" joystick-left locking bug, and reporting display pillarbox margin artifacts (Issue #2).
+
+---
+
 ## Licenses & Legal
 
 * **Road Rash** is a registered trademark of Electronic Arts Inc.
