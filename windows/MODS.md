@@ -176,7 +176,7 @@ More detail:
 - `rival_pace_percent` above 120: the result is not understood yet.
 - Hits by riders in slots 9..14 do not raise grudges (the original's rule).
 - No setting yet for gearing, rolling drag, or more than 15 racers.
-- Mods are read at start only; F10 does not show them.
+- Mods are read at start only; the F1 Options menu does not show them.
 - Careers: the prize money and qualifying with fewer racers are not checked.
 - Nothing here has been played on a screen yet, only measured in headless
   races.

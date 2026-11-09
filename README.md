@@ -24,7 +24,7 @@ Runs natively at full speed on **Windows 10/11**, **Linux**, **Steam Deck**, and
   <img src="docs/screenshots/screenshot_03_settings_overlay_f10.png" width="48%" alt="F10 Settings & QoL Overlay">
 </p>
 <p align="center">
-  <em>Startup Welcome Screen (Plus Edition) &bull; Newly Added F10 Settings &amp; QoL Menu Overlay</em>
+  <em>Startup Welcome Screen (Plus Edition) &bull; Newly Added F1 Settings &amp; QoL Menu Overlay</em>
 </p>
 
 <p align="center">
@@ -51,7 +51,8 @@ Runs natively at full speed on **Windows 10/11**, **Linux**, **Steam Deck**, and
 * **Modernized Platform Layer:** Replaces DirectDraw, DirectSound, WinMM MIDI, and the Windows 95 registry with SDL2 and TinySoundFont.
 * **Deterministic & Frame-Accurate:** Verified against the original 1996 game across 14 deterministic race replay scenarios (verifying exact physics, sound, and palette behavior).
 * **Full Gamepad Support:** Native analog steering, trigger throttle/brake, and attacks for Xbox, PlayStation, and Steam Deck controllers.
-* **Built-in Options Menu (F10):** Toggle fullscreen, CRT filters, resolution, audio volumes, and controller bindings on the fly.
+* **Built-in Options Menu (F1):** Toggle fullscreen, CRT filters, resolution, audio volumes, and controller bindings on the fly (press **F1** or **Shift+F10**).
+* **Classic In-Race HUD Toggle (F10):** Authentic 1996 F10 cycling between full dashboard speedometer, minimal overlay, and clean view.
 * **High-Fidelity Audio:** Replaces legacy MIDI with [TinySoundFont](https://github.com/schellingb/tinysoundfont), playing both authentic Sound Blaster AWE32 instrument banks and GeneralUser GS SoundFonts.
 * **Play in Your Browser:** Drop your game data into the web page to play directly inside Chrome, Firefox, Safari, or Edge with local browser caching.
 
@@ -64,7 +65,7 @@ Runs natively at full speed on **Windows 10/11**, **Linux**, **Steam Deck**, and
 | **Internal Resolution** | 640×480 software rasterizer | 1280×960 High-Resolution software rasterizer |
 | **Frame Pacing & VSync** | Original unpaced timing (`original`) | Rock-solid 60 FPS presentation (`smooth` locked, 0 judder) |
 | **Typography & HUD** | Classic Prince of Persia retro arcade font | Classic Prince of Persia retro arcade font |
-| **In-Game Options (F10)** | Original fixed settings | Dynamic CRT shaders, audio mixing, controller rebinds |
+| **In-Game Options (F1)** | Original fixed settings | Dynamic CRT shaders, audio mixing, controller rebinds |
 | **Modding Support** | Standard data files | Hot-reloadable `port/userdata/mods.ini` configuration |
 | **Audio Engine** | Legacy DirectSound emulation | TinySoundFont high-definition SoundFont playback |
 
@@ -82,7 +83,7 @@ On startup across all platforms (Windows, Linux, Steam Deck, Web), **road-sdl2-r
 |                    [ ROAD RASH PLUS EDITION ]                      |
 |                                                                    |
 |  Enhanced 1280x960 High-Res graphics with 60 FPS pacing.           |
-|  Press F10 for options & QoL | Mod with port/userdata/mods.ini     |
+|  Press F1 for options & QoL | Mod with port/userdata/mods.ini     |
 |                                                                    |
 |  GAME MODES:                                                       |
 |  * Thrash     : Pure arcade racing across 5 scenic tracks.         |
@@ -95,7 +96,7 @@ On startup across all platforms (Windows, Linux, Steam Deck, Web), **road-sdl2-r
 |  Steer       : LEFT / RIGHT   / Gamepad Left Stick / D-Pad         |
 |  Combat      : SPACE / CTRL   / Gamepad X / Y (Punch/Kick/Club)    |
 |  Pause/Menu  : ENTER          / Gamepad Start                      |
-|  Fullscreen  : F11 / ALT+ENTER | Options Menu: F10                 |
+|  Fullscreen  : F11 / ALT+ENTER | Options: F1 | HUD: F10            |
 |                                                                    |
 |                >>> Press ENTER or SPACE to Race <<<                |
 |                  [TAB: Switch Vanilla / Plus Mode]                 |
@@ -213,20 +214,21 @@ TEXT/
 | **Space / Ctrl / Alt** | Attack (Punch, Kick, Club swing) |
 | **Enter** | Confirm / Menu Select / Pause |
 | **Esc** | Back / Cancel |
-| **F10** | Open In-Game Options Menu |
+| **F1** / **Shift+F10** / **`** | Open In-Game Options & QoL Menu |
+| **F10** | Toggle HUD Mode (Classic Dashboard / Minimal) |
 | **F11 / Alt + Enter** | Toggle Fullscreen / Windowed |
 | **F12** | Instant Quit |
 
 ### Gamepad (Xbox / Steam Deck / PlayStation)
-| Control | Action |
-| :--- | :--- |
-| **Left Analog Stick / D-Pad** | Steering |
-| **Right Trigger / Button A** | Accelerate |
-| **Left Trigger / Button B** | Brake |
-| **Button X / Left Shoulder** | Attack Left |
-| **Button Y / Right Shoulder** | Attack Right |
-| **Start** | Pause / Confirm |
-| **Back / Select** | Back |
+| Control | In-Race Action | Menu / UI Action |
+| :--- | :--- | :--- |
+| **Left Analog Stick / D-Pad** | Analog Steering | Menu Navigation |
+| **Right Trigger / Button A** | Accelerate | Confirm / Select |
+| **Left Trigger / Button B** | Brake | Back / Cancel |
+| **Button X / Left Shoulder** | Attack Left (Punch / Club) | — |
+| **Button Y / Right Shoulder** | Attack Right (Kick / Club) | — |
+| **Start** | Pause | Confirm / Select |
+| **Back / Select** | Pause | Back / Cancel |
 
 ---
 

@@ -35,21 +35,22 @@ KEYS
   Enter                 confirm, pause
   Esc                   back
   Letters, Ctrl, Shift, Space   the original game's other controls
-  F10                   options (the game pauses while they are open)
+  F1 or Shift+F10       options (the game pauses while they are open)
+  F10                   toggle HUD style (classic dashboard / minimal)
   F11 or Alt+Enter      fullscreen or window
   F12                   quit at once
 
 GAMEPAD (Xbox-style, connected before starting)
-  Left stick or D-pad   steer
-  Right trigger or A    speed up
-  Left trigger or B     brake
-  X or left shoulder    attack left
-  Y or right shoulder   attack right
-  Start                 confirm, pause
-  Back                  back
+  Left stick or D-pad   steer (in race), navigate (in menus)
+  Right trigger or A    speed up (in race), confirm (in menus)
+  Left trigger or B     brake (in race), back / cancel (in menus)
+  X or left shoulder    attack left (punch / club)
+  Y or right shoulder   attack right (kick / club)
+  Start                 pause (in race), confirm (in menus)
+  Back                  pause (in race), back / cancel (in menus)
 
-OPTIONS (F10)
-  Up/Down picks, Left/Right changes, Esc or F10 closes: fullscreen, picture
+OPTIONS (F1 / Shift+F10)
+  Up/Down picks, Left/Right changes, Esc or F1 closes: fullscreen, picture
   filter, race resolution (1280x960 or 640x480), vsync, music and effects
   volume, controller and more.
 
@@ -66,8 +67,8 @@ MODS
 
 IF SOMETHING GOES WRONG
   Read port\userdata\last_run.log.
-  No sound: check the Windows volume, then Music and Effects volume in F10.
-  Small hitches while racing: set Race resolution to 640x480 in F10.
+  No sound: check the Windows volume, then Music and Effects volume in F1 (Options).
+  Small hitches while racing: set Race resolution to 640x480 in F1 (Options).
   The game's videos (logos, intro) do not play in the Windows build.
 
 LICENSES
