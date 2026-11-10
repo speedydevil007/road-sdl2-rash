@@ -43,16 +43,18 @@ KEYS
 GAMEPAD (Xbox-style, connected before starting)
   Left stick or D-pad   steer (in race), navigate (in menus)
   Right trigger or A    speed up (in race), confirm (in menus)
-  Left trigger or B     brake (in race), back / cancel (in menus)
-  X or left shoulder    attack left (punch / club)
-  Y or right shoulder   attack right (kick / club)
+  A                     also nitro, on the nitro bikes (the N key)
+  Left trigger          brake (in race)
+  B or right shoulder   attack right (kick / club) in race, back / cancel (in menus)
+  X, Y or left shoulder attack left (punch / club)
   Start                 pause (in race), confirm (in menus)
-  Back                  pause (in race), back / cancel (in menus)
+  Back                  next music track (in race), back / cancel (in menus)
 
 OPTIONS (F1 / Shift+F10)
   Up/Down picks, Left/Right changes, Esc or F1 closes: fullscreen, picture
   filter, race resolution (1280x960 or 640x480), vsync, music and effects
-  volume, controller and more.
+  volume, controller, in-race music (the soundtrack plays on through the races in
+  place of their MIDI music; off by default) and more.
 
 WHAT THE GAME WRITES
   Everything goes to port\userdata\ in this folder: roadrash.ini (options),

@@ -52,6 +52,7 @@ Runs natively at full speed on **Windows 10/11**, **Linux**, **Steam Deck**, and
 * **Deterministic & Frame-Accurate:** Verified against the original 1996 game across 14 deterministic race replay scenarios (verifying exact physics, sound, and palette behavior).
 * **Full Gamepad Support:** Native analog steering, trigger throttle/brake, and attacks for Xbox, PlayStation, and Steam Deck controllers.
 * **Built-in Options Menu (F1):** Toggle fullscreen, CRT filters, resolution, audio volumes, and controller bindings on the fly (press **F1** or **Shift+F10**).
+* **In-Race Music (optional):** Turn on *In-race music* in the F1 options and the soundtrack plays on through the races, in place of their MIDI music. Off by default, so the races sound as they did in 1996.
 * **Classic In-Race HUD Toggle (F10):** Authentic 1996 F10 cycling between full dashboard speedometer, minimal overlay, and clean view.
 * **High-Fidelity Audio:** Replaces legacy MIDI with [TinySoundFont](https://github.com/schellingb/tinysoundfont), playing both authentic Sound Blaster AWE32 instrument banks and GeneralUser GS SoundFonts.
 * **Play in Your Browser:** Drop your game data into the web page to play directly inside Chrome, Firefox, Safari, or Edge with local browser caching.
@@ -212,6 +213,7 @@ TEXT/
 | **Down Arrow** | Brake |
 | **Left / Right Arrow** | Steer Left / Right |
 | **Space / Ctrl / Alt** | Attack (Punch, Kick, Club swing) |
+| **N** | Nitro (nitro bikes) |
 | **Enter** | Confirm / Menu Select / Pause |
 | **Esc** | Back / Cancel |
 | **F1** / **Shift+F10** / **`** | Open In-Game Options & QoL Menu |
@@ -223,12 +225,12 @@ TEXT/
 | Control | In-Race Action | Menu / UI Action |
 | :--- | :--- | :--- |
 | **Left Analog Stick / D-Pad** | Analog Steering | Menu Navigation |
-| **Right Trigger / Button A** | Accelerate | Confirm / Select |
-| **Left Trigger / Button B** | Brake | Back / Cancel |
-| **Button X / Left Shoulder** | Attack Left (Punch / Club) | — |
-| **Button Y / Right Shoulder** | Attack Right (Kick / Club) | — |
+| **Right Trigger / Button A** | Accelerate (A also fires the nitro on nitro bikes) | Confirm / Select |
+| **Left Trigger** | Brake | — |
+| **Button B / Right Shoulder** | Attack Right (Kick / Club) | Back / Cancel |
+| **Button X / Button Y / Left Shoulder** | Attack Left (Punch / Club) | — |
 | **Start** | Pause | Confirm / Select |
-| **Back / Select** | Pause | Back / Cancel |
+| **Back / Select** | Next music track | Back / Cancel |
 
 ---
 
