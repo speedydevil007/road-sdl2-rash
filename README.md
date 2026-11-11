@@ -119,7 +119,7 @@ On startup across all platforms (Windows, Linux, Steam Deck, Web), **road-sdl2-r
 
 ### 2. Road Rash "Plus" (Enhanced Mode)
 * **1280×960 High-Resolution Mode:** Native double-resolution software rasterizer (`hires.c`).
-* **16:9 Wide Race View (optional):** Turn on *Wide race view* in the F1 options and the race fills a 16:9 screen: the road, terrain and scenery continue on both sides of the classic view, the dashboard stays in the middle. The game draws the wider view itself (terrain, buildings, trees, traffic), and the race plays exactly the same. Off by default; not available in Vanilla mode.
+* **16:9 Wide Race View (optional):** Added to Road Rash Plus upon popular demand. Turn on *Wide race view* in the F1 options and the race fills a 16:9 screen: the road, terrain and scenery continue on both sides of the classic view, the dashboard stays in the middle. The game draws the wider view itself (terrain, buildings, trees, traffic), and the race plays exactly the same. Off by default; not available in Vanilla mode.
 * **Rock-Solid 60 FPS Presentation:** Integrated frame scheduler eliminates background OS thread stutters (`frame_profile.c`).
 * **Road Rash Plus Preset (`mods-plus.ini`):**
   * **Aerodynamic Tuning:** 30% reduction in air drag for higher, more thrilling top speed on straightaways.
