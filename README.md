@@ -217,7 +217,8 @@ TEXT/
 | **Space / Ctrl / Alt** | Attack (Punch, Kick, Club swing) |
 | **N** | Nitro (nitro bikes) |
 | **Enter** | Confirm / Menu Select / Pause |
-| **Esc** | Back / Cancel |
+| **Esc** | Back / Cancel. In a race: holds the race and asks; Esc again quits, any other key continues |
+| **Pause** | Pause a race |
 | **F1** / **Shift+F10** / **`** | Open In-Game Options & QoL Menu |
 | **F10** | Toggle HUD Mode (Classic Dashboard / Minimal) |
 | **F11 / Alt + Enter** | Toggle Fullscreen / Windowed |

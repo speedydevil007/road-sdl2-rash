@@ -33,7 +33,9 @@ are not in it.
 KEYS
   Arrow keys            steer, speed up, brake; move in the menus
   Enter                 confirm, pause
-  Esc                   back
+  Esc                   back; in a race: holds the race and asks, Esc again quits,
+                        any other key goes on
+  Pause                 pauses a race (any key goes on)
   Letters, Ctrl, Shift, Space   the original game's other controls
   F1 or Shift+F10       options (the game pauses while they are open)
   F10                   toggle HUD style (classic dashboard / minimal)
