@@ -52,7 +52,6 @@ Runs natively at full speed on **Windows 10/11**, **Linux**, **Steam Deck**, and
 * **Deterministic & Frame-Accurate:** Verified against the original 1996 game across 14 deterministic race replay scenarios (verifying exact physics, sound, and palette behavior).
 * **Full Gamepad Support:** Native analog steering, trigger throttle/brake, and attacks for Xbox, PlayStation, and Steam Deck controllers.
 * **Built-in Options Menu (F1):** Toggle fullscreen, CRT filters, resolution, audio volumes, and controller bindings on the fly (press **F1** or **Shift+F10**).
-* **Wide Race View (optional, 16:9):** Turn on *Wide race view* in the F1 options (with the race resolution at 1280x960) and the race fills a 16:9 screen: the road, terrain and scenery continue on both sides of the classic view and the dashboard stays in the middle. The game itself is unchanged, so objects it never drew beyond the old 4:3 edge still appear there. Off by default.
 * **In-Race Music (optional):** Turn on *In-race music* in the F1 options and the soundtrack plays on through the races, in place of their MIDI music. Off by default, so the races sound as they did in 1996.
 * **Classic In-Race HUD Toggle (F10):** Authentic 1996 F10 cycling between full dashboard speedometer, minimal overlay, and clean view.
 * **High-Fidelity Audio:** Replaces legacy MIDI with [TinySoundFont](https://github.com/schellingb/tinysoundfont), playing both authentic Sound Blaster AWE32 instrument banks and GeneralUser GS SoundFonts.
@@ -65,6 +64,7 @@ Runs natively at full speed on **Windows 10/11**, **Linux**, **Steam Deck**, and
 | Feature | Vanilla Edition (1996 Authentic) | Road Rash Plus Edition (Enhanced) |
 | :--- | :--- | :--- |
 | **Internal Resolution** | 640×480 software rasterizer | 1280×960 High-Resolution software rasterizer |
+| **Screen Shape** | 4:3, pillarboxed on wide screens | 4:3, or the optional **16:9 wide race view** (F1 options): more road on each side |
 | **Frame Pacing & VSync** | Original unpaced timing (`original`) | Rock-solid 60 FPS presentation (`smooth` locked, 0 judder) |
 | **Typography & HUD** | Classic Prince of Persia retro arcade font | Classic Prince of Persia retro arcade font |
 | **In-Game Options (F1)** | Original fixed settings | Dynamic CRT shaders, audio mixing, controller rebinds |
@@ -119,6 +119,7 @@ On startup across all platforms (Windows, Linux, Steam Deck, Web), **road-sdl2-r
 
 ### 2. Road Rash "Plus" (Enhanced Mode)
 * **1280×960 High-Resolution Mode:** Native double-resolution software rasterizer (`hires.c`).
+* **16:9 Wide Race View (optional):** Turn on *Wide race view* in the F1 options and the race fills a 16:9 screen: the road, terrain and scenery continue on both sides of the classic view, the dashboard stays in the middle. The game itself is unchanged, so objects it never drew beyond the old 4:3 edge still appear there. Off by default; not available in Vanilla mode.
 * **Rock-Solid 60 FPS Presentation:** Integrated frame scheduler eliminates background OS thread stutters (`frame_profile.c`).
 * **Road Rash Plus Preset (`mods-plus.ini`):**
   * **Aerodynamic Tuning:** 30% reduction in air drag for higher, more thrilling top speed on straightaways.
