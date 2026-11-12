@@ -121,7 +121,7 @@ On startup across all platforms (Windows, Linux, Steam Deck, Web), **road-sdl2-r
 ### 2. Road Rash "Plus" (Enhanced Mode)
 * **1280×960 High-Resolution Mode:** Native double-resolution software rasterizer (`hires.c`).
 * **16:9 Wide Race View (optional):** Added to Road Rash Plus upon popular demand. Turn on *Wide race view* in the F1 options and the race fills a 16:9 screen: the road, terrain and scenery continue on both sides of the classic view, the dashboard stays in the middle. The game draws the wider view itself (terrain, buildings, trees, traffic), and the race plays exactly the same. Off by default; not available in Vanilla mode.
-* **Longer Draw Distance (optional):** Set *Draw distance* to *far* or *farthest* in the F1 options and the road, terrain, buildings and scenery are drawn 48 or 64 road segments ahead in place of the original 32 (from the next race on). Traffic and racers appear at the original distance, and the race plays exactly the same. Off by default; not available in Vanilla mode.
+* **Longer Draw Distance (optional):** Set *Draw distance* to *far* or *farthest* in the F1 options and the road, terrain, buildings and scenery are drawn 48 or 64 road segments ahead in place of the original 32 (from the next race on). The extra distance fades gently toward the horizon. Traffic and racers appear at the original distance, and the race plays exactly the same. Off by default; not available in Vanilla mode.
 * **Rock-Solid 60 FPS Presentation:** Integrated frame scheduler eliminates background OS thread stutters (`frame_profile.c`).
 * **Road Rash Plus Preset (`mods-plus.ini`):**
   * **Aerodynamic Tuning:** 30% reduction in air drag for higher, more thrilling top speed on straightaways.
