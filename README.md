@@ -65,6 +65,7 @@ Runs natively at full speed on **Windows 10/11**, **Linux**, **Steam Deck**, and
 | :--- | :--- | :--- |
 | **Internal Resolution** | 640×480 software rasterizer | 1280×960 High-Resolution software rasterizer |
 | **Screen Shape** | 4:3, pillarboxed on wide screens | 4:3, or the optional **16:9 wide race view** (F1 options): more road on each side |
+| **Draw Distance** | 32 road segments ahead | 32, or the optional **far / farthest** setting (F1 options): 48 or 64 segments ahead |
 | **Frame Pacing & VSync** | Original unpaced timing (`original`) | Rock-solid 60 FPS presentation (`smooth` locked, 0 judder) |
 | **Typography & HUD** | Classic Prince of Persia retro arcade font | Classic Prince of Persia retro arcade font |
 | **In-Game Options (F1)** | Original fixed settings | Dynamic CRT shaders, audio mixing, controller rebinds |
@@ -120,6 +121,7 @@ On startup across all platforms (Windows, Linux, Steam Deck, Web), **road-sdl2-r
 ### 2. Road Rash "Plus" (Enhanced Mode)
 * **1280×960 High-Resolution Mode:** Native double-resolution software rasterizer (`hires.c`).
 * **16:9 Wide Race View (optional):** Added to Road Rash Plus upon popular demand. Turn on *Wide race view* in the F1 options and the race fills a 16:9 screen: the road, terrain and scenery continue on both sides of the classic view, the dashboard stays in the middle. The game draws the wider view itself (terrain, buildings, trees, traffic), and the race plays exactly the same. Off by default; not available in Vanilla mode.
+* **Longer Draw Distance (optional):** Set *Draw distance* to *far* or *farthest* in the F1 options and the road, terrain, buildings and scenery are drawn 48 or 64 road segments ahead in place of the original 32 (from the next race on). Traffic and racers appear at the original distance, and the race plays exactly the same. Off by default; not available in Vanilla mode.
 * **Rock-Solid 60 FPS Presentation:** Integrated frame scheduler eliminates background OS thread stutters (`frame_profile.c`).
 * **Road Rash Plus Preset (`mods-plus.ini`):**
   * **Aerodynamic Tuning:** 30% reduction in air drag for higher, more thrilling top speed on straightaways.

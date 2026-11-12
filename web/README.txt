@@ -55,7 +55,9 @@ GAMEPAD (Xbox-style, connected before starting)
 OPTIONS (F1 / Shift+F10)
   Up/Down picks, Left/Right changes, Esc or F1 closes: fullscreen, picture
   filter, race resolution (1280x960 or 640x480), wide race view (Plus mode only:
-  16:9, more road on each side, the dashboard in the middle), vsync, music and effects
+  16:9, more road on each side, the dashboard in the middle), draw distance (Plus mode
+  only: far or farthest shows the road and scenery 48 or 64 strips ahead in place of
+  32, from the next race on), vsync, music and effects
   volume, controller, in-race music (the soundtrack plays on through the races in
   place of their MIDI music; off by default) and more.
 
