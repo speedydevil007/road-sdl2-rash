@@ -96,9 +96,16 @@ IF SOMETHING GOES WRONG
   Read port/userdata/last_run.log.
   No sound: check the system volume, then Music and Effects volume in F1 (Options).
   Small hitches while racing: set Race resolution to 640x480 in F1 (Options).
-  The game's videos (logos, intro) play only if you have them (a Video/
-  folder next to ROADRASH.EXE) and ffmpeg is installed; without them the
-  game skips them.
+  The game's videos (logos, intro, race videos) play when you have them: a
+  VIDEO/ folder next to ROADRASH.EXE. The program decodes them itself; no
+  ffmpeg is needed. Without them the game skips them.
+  From the Steam edition (the 30th Anniversary release): copy
+  RoadRash95.exe and the folders AUDIO, DATA, IMAGES, TEXT and VIDEO from
+  the game's Steam folder into this folder, without renaming anything. The
+  Steam edition has no ROADRASH.EXE: this program puts the parts of it
+  that it needs together from RoadRash95.exe (the one of October 2026;
+  after a Steam update of the game, get this program's newer release or
+  copy ROADRASH.EXE of 1996 here).
 
 LICENSES
   licenses/ has the licenses of the parts that are not the game: SDL2,

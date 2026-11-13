@@ -61,6 +61,8 @@ The wide view and the draw distance only change what is drawn: a race plays out 
 * **Options menu (F1).** Fullscreen, filter, resolution, VSync, volumes, controller and more, changeable mid-race.
 * **Native performance.** The game's code runs directly on your CPU as compiled C, with no emulation layer in between.
 * **Faithful audio.** MIDI music through [TinySoundFont](https://github.com/schellingb/tinysoundfont) with the game's own AWE32 instrument banks and the GeneralUser GS SoundFont. Optional **in-race music** plays the soundtrack through the races.
+* **Works with the Steam edition.** The files of *Road Rash* on Steam (the 30th Anniversary release) work as well as the 1996 CD's.
+* **Videos.** With the game's `VIDEO` folder copied in, the logos, the intro and the race videos play, decoded by the port itself.
 * **Checked against the original.** 14 scripted race replays must match the original game's results frame for frame before a build is released.
 * **Classic HUD toggle (F10)** and the original Escape-to-quit prompt in races.
 * **Plays in the browser.** Drop your game data onto the web page and race in Chrome, Firefox, Safari or Edge.
@@ -79,11 +81,14 @@ The wide view and the draw distance only change what is drawn: a race plays out 
 
 **Get the latest release:** [Releases](https://github.com/speedydevil007/road-sdl2-rash/releases/latest), or play in the browser at **https://speedydevil007.github.io/road-sdl2-rash/**
 
-This is a "bring your own game" port: **no game files are included.** From your original 1996 PC copy of Road Rash (CD-ROM or ISO), copy these next to the program:
+This is a "bring your own game" port: **no game files are included.** Copy these from your own copy of Road Rash into the port's folder, next to the program, without renaming anything:
 
-```text
-ROADRASH.EXE   AUDIO/   DATA/   IMAGES/   TEXT/
-```
+| Your copy | Copy these |
+| :--- | :--- |
+| **Steam** (30th Anniversary release) | `RoadRash95.exe`, `AUDIO/`, `DATA/`, `IMAGES/`, `TEXT/`, `VIDEO/` (in Steam: right-click the game → Manage → Browse local files) |
+| **1996 PC CD-ROM or ISO** | `ROADRASH.EXE`, `AUDIO/`, `DATA/`, `IMAGES/`, `TEXT/`, and `VIDEO/` for the videos |
+
+The port reads the files and changes nothing in them. The Steam edition is supported for its `RoadRash95.exe` of October 2026; if Steam updates the game and the port says it does not know the file, get the port's newer release. The web edition takes the 1996 files only.
 
 | Platform | Folder | How to start |
 | :--- | :--- | :--- |

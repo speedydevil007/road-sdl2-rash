@@ -21,6 +21,21 @@ are not in it.
   missing and stops. Only port\assets\awe may be left out: the music then
   plays with general instruments.
 
+  VIDEOS (optional): copy the game's VIDEO\ folder here as well and the
+  logos, the intro and the race videos play (the .AVI files: Cinepak video,
+  decoded by the program itself).
+
+  FROM THE STEAM EDITION (Road Rash, the 30th Anniversary release): open
+  the game's folder (in Steam: right-click the game, Manage, Browse local
+  files) and copy RoadRash95.exe and the folders AUDIO, DATA, IMAGES, TEXT
+  and VIDEO from it into this folder. Do not rename anything. Nothing in
+  the Steam folder is changed.
+  The Steam edition has no ROADRASH.EXE: this program puts the parts of it
+  that it needs together from RoadRash95.exe. That works for the
+  RoadRash95.exe of October 2026; if Steam updates the game and this
+  program says it does not know the file, get this program's newer
+  release, or copy ROADRASH.EXE of 1996 here.
+
 2. START
   Double-click RoadRashPort.exe. Keep SDL2.dll next to it.
   Windows 10 or 11, 64-bit. Windows 7 and 8.1 need Microsoft's
@@ -76,7 +91,7 @@ IF SOMETHING GOES WRONG
   Read port\userdata\last_run.log.
   No sound: check the Windows volume, then Music and Effects volume in F1 (Options).
   Small hitches while racing: set Race resolution to 640x480 in F1 (Options).
-  The game's videos (logos, intro) do not play in the Windows build.
+  No videos: they play only when the VIDEO folder is in this folder (see 1).
 
 LICENSES
   licenses\ has the licenses of the parts that are not the game: SDL2,
