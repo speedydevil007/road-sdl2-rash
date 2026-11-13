@@ -2,273 +2,135 @@
 
 [![Verified developer on RecompStore](https://recompstore.com/assets/press/verified-dark.svg)](https://recompstore.com/dev/speedydevil007)
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20Project-ff5e5b?logo=ko-fi&logoColor=white)](https://ko-fi.com/speedydevil007)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20Steam%20Deck%20%7C%20Web-blue.svg)](#editions--platforms)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20Steam%20Deck%20%7C%20Web-blue.svg)](#download--play)
 [![License](https://img.shields.io/badge/License-GPL%20%2F%20MIT%20Platform-green.svg)](#licenses--legal)
-[![GitHub Pages](https://img.shields.io/badge/Web%20Port-Live%20Ready-orange.svg)](#3-web-browser)
+[![GitHub Pages](https://img.shields.io/badge/Web%20Port-Live%20Ready-orange.svg)](#download--play)
 
-**road-sdl2-rash** is a modern, native 64-bit port and WebAssembly release of the classic 1996 PC title **Road Rash**, translated directly from original x86 machine code into portable C over an **SDL2** platform layer.
+**road-sdl2-rash** is a native 64-bit port of the 1996 PC game **Road Rash**, translated from the original x86 machine code into portable C over **SDL2**. No DOSBox, no emulator, no Wine. It runs on **Windows 10/11**, **Linux**, **Steam Deck** and in **web browsers**.
 
-Runs natively at full speed on **Windows 10/11**, **Linux**, **Steam Deck**, and in **Modern Web Browsers** (WebAssembly + WebGL).
+Play it as it was in 1996 (**Vanilla**), or switch to **Road Rash Plus**: high resolution, a 16:9 wide view, a longer draw distance and smooth 60 FPS pacing, with the race itself unchanged.
 
 **A 1.5-Year Milestone:** I've been working on reverse engineering, lifting, and rebuilding this project for the last 1.5 years, and it is now finally ready for release! Thanks to LLMs.
 
-> [!NOTE]
-> **Source Code Release:** The complete decompiled C source code (~97,000 lines of structured, typed, human-readable C with modding hooks and tools) is undergoing final code cleanup and will be open-sourced soon!
-
----
-
-## Screenshots
-
 <p align="center">
-  <img src="docs/screenshots/screenshot_01_welcome_plus.png" width="48%" alt="Startup Welcome Screen (Plus Mode)">
-  <img src="docs/screenshots/screenshot_03_settings_overlay_f10.png" width="48%" alt="F10 Settings & QoL Overlay">
+  <img src="docs/screenshots/screenshot_08_wide_view_pacific.png" width="96%" alt="Road Rash Plus: 16:9 wide race view with the longer draw distance, Pacific Highway">
 </p>
 <p align="center">
-  <em>Startup Welcome Screen (Plus Edition) &bull; Newly Added F1 Settings &amp; QoL Menu Overlay</em>
-</p>
-
-<p align="center">
-  <img src="docs/screenshots/screenshot_05_in_race_gameplay_plus.png" width="48%" alt="In-Race High-Res 60 FPS Gameplay">
-  <img src="docs/screenshots/screenshot_06_in_race_action.png" width="48%" alt="Live Pack Racing Action">
-</p>
-<p align="center">
-  <em>High-Res 1280&times;960 In-Race Gameplay &bull; Live Pack Racing &amp; Rival Jostling Action</em>
-</p>
-
-<p align="center">
-  <img src="docs/screenshots/screenshot_04_main_menu.png" width="48%" alt="Retro Main Menu">
-  <img src="docs/screenshots/screenshot_07_in_race_settings_f10.png" width="48%" alt="In-Race F10 Settings Menu">
-</p>
-<p align="center">
-  <em>Classic 1996 Main Menu Screen &bull; Mid-Race Real-Time Settings Adjustment</em>
+  <em>Road Rash Plus: the 16:9 wide race view with the longer draw distance</em>
 </p>
 
 ---
 
-## Key Features
+## Road Rash Plus
 
-* **100% Native 64-bit Execution:** No DOSBox, emulators, or Wine needed. Compiles and executes directly on modern operating systems.
-* **Modernized Platform Layer:** Replaces DirectDraw, DirectSound, WinMM MIDI, and the Windows 95 registry with SDL2 and TinySoundFont.
-* **Deterministic & Frame-Accurate:** Verified against the original 1996 game across 14 deterministic race replay scenarios (verifying exact physics, sound, and palette behavior).
-* **Full Gamepad Support:** Native analog steering, trigger throttle/brake, and attacks for Xbox, PlayStation, and Steam Deck controllers.
-* **Built-in Options Menu (F1):** Toggle fullscreen, CRT filters, resolution, audio volumes, and controller bindings on the fly (press **F1** or **Shift+F10**).
-* **In-Race Music (optional):** Turn on *In-race music* in the F1 options and the soundtrack plays on through the races, in place of their MIDI music. Off by default, so the races sound as they did in 1996.
-* **Classic In-Race HUD Toggle (F10):** Authentic 1996 F10 cycling between full dashboard speedometer, minimal overlay, and clean view.
-* **High-Fidelity Audio:** Replaces legacy MIDI with [TinySoundFont](https://github.com/schellingb/tinysoundfont), playing both authentic Sound Blaster AWE32 instrument banks and GeneralUser GS SoundFonts.
-* **Play in Your Browser:** Drop your game data into the web page to play directly inside Chrome, Firefox, Safari, or Edge with local browser caching.
+Press **TAB** on the welcome screen to switch between Vanilla and Plus. Every Plus setting is in the **F1** options menu, and the wide view, the draw distance and the in-race music are off until you turn them on.
 
----
-
-## Original vs Road Rash Plus
-
-| Feature | Vanilla Edition (1996 Authentic) | Road Rash Plus Edition (Enhanced) |
+| | Vanilla (1996 authentic) | Road Rash Plus |
 | :--- | :--- | :--- |
-| **Internal Resolution** | 640×480 software rasterizer | 1280×960 High-Resolution software rasterizer |
-| **Screen Shape** | 4:3, pillarboxed on wide screens | 4:3, or the optional **16:9 wide race view** (F1 options): more road on each side |
-| **Draw Distance** | 32 road segments ahead | 32, or the optional **far / farthest** setting (F1 options): 48 or 64 segments ahead |
-| **Frame Pacing & VSync** | Original unpaced timing (`original`) | Rock-solid 60 FPS presentation (`smooth` locked, 0 judder) |
-| **Typography & HUD** | Classic Prince of Persia retro arcade font | Classic Prince of Persia retro arcade font |
-| **In-Game Options (F1)** | Original fixed settings | Dynamic CRT shaders, audio mixing, controller rebinds |
-| **Modding Support** | Standard data files | Hot-reloadable `port/userdata/mods.ini` configuration |
-| **Audio Engine** | Legacy DirectSound emulation | TinySoundFont high-definition SoundFont playback |
+| **Resolution** | 640×480 | **1280×960**, drawn by the game's own software rasterizer |
+| **Screen shape** | 4:3, pillarboxed on wide screens | 4:3, or the **16:9 wide race view** |
+| **Draw distance** | 32 road segments | 32, or **48 / 64** with a fade into the distance |
+| **Frame pacing** | Original timing | **Smooth 60 FPS** presentation with VSync |
+| **Scaling filter** | Smooth (Catmull-Rom) by default; sharp, nearest and linear to choose from | Same |
+| **Gameplay** | Bit-exact 1996 physics, AI and rules | The same rules; optional tuning preset |
+
+### What Plus adds
+
+* **16:9 wide race view.** The race fills a widescreen display. The game draws the extra road, terrain, buildings and traffic on both sides itself; the dashboard stays in the middle.
+* **Longer draw distance.** *Far* and *farthest* draw the road and scenery 48 or 64 segments ahead in place of 32, fading gently toward the horizon. Traffic and racers appear at the original distance.
+* **1280×960 high resolution.** Four times the pixels of the original, with crisp HUD text and gauges.
+* **Smooth 60 FPS pacing.** A frame scheduler presents the game evenly, without the original's uneven timing.
+* **Plus tuning preset (optional).** `mods-plus.ini` lowers air drag for a higher top speed, makes rivals feud harder, sharpens the starter bike's brakes and improves off-road recovery. See [Modding](#modding).
+
+The wide view and the draw distance only change what is drawn: a race plays out exactly the same with them on or off.
+
+<p align="center">
+  <img src="docs/screenshots/screenshot_09_wide_view_city.png" width="48%" alt="Wide race view in town">
+  <img src="docs/screenshots/screenshot_05_in_race_gameplay_plus.png" width="48%" alt="High-resolution race in the classic 4:3 view">
+</p>
+<p align="center">
+  <em>Wide view in town &bull; High resolution in the classic 4:3 view</em>
+</p>
 
 ---
 
-## Startup Welcome Screen
+## In Every Mode
 
-On startup across all platforms (Windows, Linux, Steam Deck, Web), **road-sdl2-rash** greets the player with an interactive welcome screen styled with the classic retro font:
+* **Full controller support.** Xbox, PlayStation, Switch Pro and Steam Deck controllers work out of the box: analog steering, triggers for throttle and brake, and the game's own "Configure Input" screen for remapping.
+* **Smooth scaling filter.** The picture is scaled to your display with a Catmull-Rom filter by default. Sharp, nearest, linear, integer scaling and CRT scanlines are in the options.
+* **Options menu (F1).** Fullscreen, filter, resolution, VSync, volumes, controller and more, changeable mid-race.
+* **Native performance.** The game's code runs directly on your CPU as compiled C, with no emulation layer in between.
+* **Faithful audio.** MIDI music through [TinySoundFont](https://github.com/schellingb/tinysoundfont) with the game's own AWE32 instrument banks and the GeneralUser GS SoundFont. Optional **in-race music** plays the soundtrack through the races.
+* **Checked against the original.** 14 scripted race replays must match the original game's results frame for frame before a build is released.
+* **Classic HUD toggle (F10)** and the original Escape-to-quit prompt in races.
+* **Plays in the browser.** Drop your game data onto the web page and race in Chrome, Firefox, Safari or Edge.
 
-```
-+--------------------------------------------------------------------+
-|                           ROAD-SDL2-RASH                           |
-|            Decomp & Recomp with SDL2 by speedydevil007             |
-|                                                                    |
-|                    [ ROAD RASH PLUS EDITION ]                      |
-|                                                                    |
-|  Enhanced 1280x960 High-Res graphics with 60 FPS pacing.           |
-|  Press F1 for options & QoL | Mod with port/userdata/mods.ini     |
-|                                                                    |
-|  GAME MODES:                                                       |
-|  * Thrash     : Pure arcade racing across 5 scenic tracks.         |
-|  * Big Game   : Career mode with cash, bike shops, and cops.       |
-|  * Mano a Mano: Head-to-head 2-player split/duel action.           |
-|                                                                    |
-|  HOW TO PLAY (CONTROLS):                                           |
-|  Accelerate  : UP Arrow       / Gamepad RT / Button A              |
-|  Brake       : DOWN Arrow     / Gamepad LT / Button B              |
-|  Steer       : LEFT / RIGHT   / Gamepad Left Stick / D-Pad         |
-|  Combat      : SPACE / CTRL   / Gamepad X / Y (Punch/Kick/Club)    |
-|  Pause/Menu  : ENTER          / Gamepad Start                      |
-|  Fullscreen  : F11 / ALT+ENTER | Options: F1 | HUD: F10            |
-|                                                                    |
-|                >>> Press ENTER or SPACE to Race <<<                |
-|                  [TAB: Switch Vanilla / Plus Mode]                 |
-+--------------------------------------------------------------------+
-```
-
-* Press **TAB** on the welcome screen at any time to switch between **Vanilla** and **Plus** mode.
-* Press **ENTER** or **SPACE** (or Gamepad Start / A) to dismiss and start racing!
+<p align="center">
+  <img src="docs/screenshots/screenshot_01_welcome_plus.png" width="48%" alt="Welcome screen (Plus mode)">
+  <img src="docs/screenshots/screenshot_03_settings_overlay_f10.png" width="48%" alt="F1 options menu">
+</p>
+<p align="center">
+  <em>Welcome screen &bull; F1 options menu</em>
+</p>
 
 ---
 
-## Editions & Platforms
+## Download & Play
 
-### 1. Standard (Vanilla 1996) Mode
-* 100% bit-exact physics and mechanics identical to the 1996 Windows 95 CD release.
-* Original 640×480 software rendering.
-* Original rival AI pacing, grudge counters, and aggression tables.
+**Get the latest release:** [Releases](https://github.com/speedydevil007/road-sdl2-rash/releases/latest), or play in the browser at **https://speedydevil007.github.io/road-sdl2-rash/**
 
-### 2. Road Rash "Plus" (Enhanced Mode)
-* **1280×960 High-Resolution Mode:** Native double-resolution software rasterizer (`hires.c`).
-* **16:9 Wide Race View (optional):** Added to Road Rash Plus upon popular demand. Turn on *Wide race view* in the F1 options and the race fills a 16:9 screen: the road, terrain and scenery continue on both sides of the classic view, the dashboard stays in the middle. The game draws the wider view itself (terrain, buildings, trees, traffic), and the race plays exactly the same. Off by default; not available in Vanilla mode.
-* **Longer Draw Distance (optional):** Set *Draw distance* to *far* or *farthest* in the F1 options and the road, terrain, buildings and scenery are drawn 48 or 64 road segments ahead in place of the original 32 (from the next race on). The extra distance fades gently toward the horizon. Traffic and racers appear at the original distance, and the race plays exactly the same. Off by default; not available in Vanilla mode.
-* **Rock-Solid 60 FPS Presentation:** Integrated frame scheduler eliminates background OS thread stutters (`frame_profile.c`).
-* **Road Rash Plus Preset (`mods-plus.ini`):**
-  * **Aerodynamic Tuning:** 30% reduction in air drag for higher, more thrilling top speed on straightaways.
-  * **Dynamic Rival Feuds:** Increased rival aggression and lasting grudges for intense mid-race brawls.
-  * **Sharper Starter Bike:** Improved brake responsiveness on the Corsair Swallow.
-  * **Better Offroad Recovery:** Enhanced shoulder traction when forced off the asphalt.
+This is a "bring your own game" port: **no game files are included.** From your original 1996 PC copy of Road Rash (CD-ROM or ISO), copy these next to the program:
 
----
-
-## Platform Downloads
-
-| Platform | Location | Executable / Target | Details |
-| :--- | :--- | :--- | :--- |
-| **Windows** | [`windows/`](windows/) | `RoadRashPort.exe` | Native 64-bit executable for Windows 10 & 11. |
-| **Linux & Steam Deck** | [`linux/`](linux/) | `roadrash.sh` | Portable glibc 2.17+ 64-bit binary with embedded SDL2. |
-| **Web Browser** | [`web/`](web/) | `index.html` | Client-side WebAssembly port with drag-and-drop file loader. |
-
----
-
-## Compatibility & System Requirements
-
-| Platform | Runs on | Needs | Tested so far |
-| :--- | :--- | :--- | :--- |
-| **Windows** | Windows 10 or 11, 64-bit | Nothing to install (`SDL2.dll` ships next to the exe) | Scripted races without a window match the reference result on Windows 11 |
-| **Windows 7 / 8.1** | Likely, 64-bit only | Microsoft's Universal C Runtime update ([KB2999226](https://support.microsoft.com/kb/2999226)) | Not tested |
-| **Linux** | Any 64-bit (x86-64) distribution from 2012 on: glibc 2.17 or newer (Ubuntu 14.04+, Debian 8+, CentOS 7+, Fedora, Arch, Mint, SteamOS, …) | Nothing to install: SDL2 is built into the program. Uses X11 or Wayland, and PulseAudio (PipeWire included) or ALSA, whichever the system has | Scripted races without a window match the reference result on Ubuntu 22.04; a race started through `roadrash.sh` on Ubuntu 14.04, also without a window |
-| **Steam Deck** | SteamOS 3 (Desktop or Gaming Mode) | Nothing to install | Not yet run on a Deck |
-| **Web** | A current desktop browser with WebAssembly | A web server (`serve.py` or any static host) and `index.data` (about 77 MB, downloaded before the game starts) | A scripted race in Chrome without a window |
-
-**Not supported:** macOS, ARM computers (Raspberry Pi, ARM Chromebooks, Apple Silicon) and 32-bit systems have no native program. The web version is the way to play on those, but it has not been tested there.
-
-**Not tested yet:** playing with a window and sound on Windows or a Linux desktop, the Steam Deck, and Edge, Firefox and Safari. Reports are welcome.
-
-**Disk space:** the program folder (38 MB on Windows, 54 MB on Linux, 7 MB for the web) plus the original game's files (about 43 MB; for the web, `index.data` is about 77 MB). No minimum CPU or GPU has been measured; the game runs at its original 640×480 (1280×960 in high resolution) through SDL2.
-
-*Requirements and test status as of 2026-10-28.*
-
----
-
-## Getting Started ("Bring Your Own Game")
-
-To respect copyright laws and preservation standards, **no proprietary game assets are hosted in this repository**. You provide the assets from your original 1996 PC copy of Road Rash (CD-ROM or ISO).
-
-### Required Game Files
-
-From your original game disc or installation, copy the following items:
 ```text
-ROADRASH.EXE
-AUDIO/
-DATA/
-IMAGES/
-TEXT/
+ROADRASH.EXE   AUDIO/   DATA/   IMAGES/   TEXT/
 ```
 
-### Installation & Launch
+| Platform | Folder | How to start |
+| :--- | :--- | :--- |
+| **Windows 10 / 11** | [`windows/`](windows/) | Copy the game files beside `RoadRashPort.exe` and double-click it. If SmartScreen appears: "More info" → "Run anyway". |
+| **Linux & Steam Deck** | [`linux/`](linux/) | Copy the game files beside `roadrash.sh`, then `chmod +x roadrash.sh roadrash-port && ./roadrash.sh`. On a Deck, add `roadrash.sh` as a Non-Steam Game. |
+| **Web** | [`web/`](web/) | Build `index.data` with `python3 web/pack_game_files.py <folder-with-gamefiles>`, then drop it onto the page (or serve locally with `python3 web/serve.py 8765`). |
 
-#### 1. Windows (10 / 11)
-1. Download or clone this repository, and open the [`windows/`](windows/) folder.
-2. Copy the required game files (`ROADRASH.EXE`, `AUDIO`, `DATA`, `IMAGES`, `TEXT`) directly into [`windows/`](windows/) alongside `RoadRashPort.exe`.
-3. Double-click `RoadRashPort.exe`.
-   *(If Windows Defender SmartScreen appears, click "More info" → "Run anyway".)*
+**Requirements:** 64-bit Windows 10/11, or any x86-64 Linux from 2012 on (glibc 2.17+), or a current desktop browser. Nothing to install: SDL2 ships with the Windows build and is built into the Linux one. macOS, ARM and 32-bit systems have no native build; the web edition is the way to play there (untested). About 40–55 MB for the program plus about 43 MB of game files.
 
-#### 2. Linux & Steam Deck
-1. Open the [`linux/`](linux/) folder.
-2. Copy the required game files into [`linux/`](linux/) alongside `roadrash.sh`.
-3. Make the launcher executable and run:
-   ```bash
-   chmod +x roadrash.sh roadrash-port
-   ./roadrash.sh
-   ```
-   * **Steam Deck Users:** Add `roadrash.sh` as a "Non-Steam Game" in Desktop Mode. Return to Gaming Mode — controller input works out of the box!
-
-#### 3. Web Browser
-1. If testing locally:
-   ```bash
-   python3 web/serve.py 8765
-   ```
-   Then open `http://localhost:8765/` in your browser.
-2. If playing on a hosted web deployment (e.g. GitHub Pages):
-   * Open the web page link.
-   * **Drag & Drop** your `index.data` file onto the browser window (or click to browse).
-   * The page will read the file, optionally cache it in your browser's **IndexedDB** for instant zero-download loading on future visits, and start the race immediately!
-   * *(To generate `index.data` from your original files, run `python3 web/pack_game_files.py <folder-with-gamefiles>`)*.
+**Tested so far:** scripted races match the reference results on Windows 11 and Ubuntu 22.04, and in Chrome. The Steam Deck, Windows 7/8.1 and the other browsers are untested; reports are welcome.
 
 ---
 
 ## Controls
 
-### Keyboard
-| Key | Action |
-| :--- | :--- |
-| **Up Arrow** | Accelerate |
-| **Down Arrow** | Brake |
-| **Left / Right Arrow** | Steer Left / Right |
-| **Space / Ctrl / Alt** | Attack (Punch, Kick, Club swing) |
-| **N** | Nitro (nitro bikes) |
-| **Enter** | Confirm / Menu Select / Pause |
-| **Esc** | Back / Cancel. In a race: holds the race and asks; Esc again quits, any other key continues |
-| **Pause** | Pause a race |
-| **F1** / **Shift+F10** / **`** | Open In-Game Options & QoL Menu |
-| **F10** | Toggle HUD Mode (Classic Dashboard / Minimal) |
-| **F11 / Alt + Enter** | Toggle Fullscreen / Windowed |
-| **F12** | Instant Quit |
-
-### Gamepad (Xbox / Steam Deck / PlayStation)
-| Control | In-Race Action | Menu / UI Action |
+| Action | Keyboard | Gamepad |
 | :--- | :--- | :--- |
-| **Left Analog Stick / D-Pad** | Analog Steering | Menu Navigation |
-| **Right Trigger / Button A** | Accelerate (A also fires the nitro on nitro bikes) | Confirm / Select |
-| **Left Trigger** | Brake | — |
-| **Button B / Right Shoulder** | Attack Right (Kick / Club) | Back / Cancel |
-| **Button X / Button Y / Left Shoulder** | Attack Left (Punch / Club) | — |
-| **Start** | Pause | Confirm / Select |
-| **Back / Select** | Next music track | Back / Cancel |
+| **Steer** | Left / Right | Left stick / D-Pad |
+| **Accelerate** | Up | Right trigger / A |
+| **Brake** | Down | Left trigger |
+| **Attack** (punch, kick, club) | Space / Ctrl / Alt | X / Y / LB (left), B / RB (right) |
+| **Nitro** (nitro bikes) | N | A |
+| **Pause** | Pause | Start |
+| **Quit the race** | Esc (asks first; Esc again quits) | — |
+| **Next music track** | — | Back / Select |
+| **Confirm / Back in menus** | Enter / Esc | A or Start / B or Back |
+| **Options menu** | F1 (also Shift+F10 or `` ` ``) | — |
+| **HUD mode** | F10 | — |
+| **Fullscreen** | F11 / Alt+Enter | — |
+| **Quit the game** | F12 | — |
 
 ---
 
-## Modding & Customization (`mods.ini`)
+## Modding
 
-Both the desktop and web builds include an integrated real-time modding engine.
-
-* **Default State:** A pre-configured `port/userdata/mods.ini` is provided with all options commented out with `#` so first-time players experience the authentic 1996 gameplay balance.
-* **How to Customize:** Open `port/userdata/mods.ini` in any text editor, remove the `#` before the line you want, and save:
+Both the desktop and web builds read `port/userdata/mods.ini`. Every line ships commented out, so the game starts with its 1996 balance. Remove the `#` from a line to turn it on:
 
 ```ini
-# --- Example Tweaks ---
-# Make rival AI fight each other frequently
-rival_feud_percent = 200
-
-# Increase top speed by lowering air resistance
-physics_air_drag_percent = 70
-
-# Make starter bike brakes sharper
-bike.swallow.brakes = -150
+rival_feud_percent = 200          # rivals fight each other more
+physics_air_drag_percent = 70     # higher top speed
+bike.swallow.brakes = -150        # sharper starter-bike brakes
 ```
 
-* **To Enable Road Rash Plus:** Copy or rename `port/userdata/mods-plus.ini.example` to `port/userdata/mods.ini`.
-* See [MODS.md](MODS.md) for full documentation of every bike ID, traffic multiplier, and AI combat variable.
+For the Plus tuning preset, copy `port/userdata/mods-plus.ini.example` to `port/userdata/mods.ini`. [MODS.md](MODS.md) documents every setting.
 
----
-
-## Coming Soon: Readable C Decompiled Source
-
-The complete source code that powers this native port will be released in an upcoming repository update:
-* **~97,000 Lines of Structured C:** 59 modular subsystem files covering bike physics, rival AI algorithms, course generation, software projection rasterizer, and audio synthesis.
-* **Readable & Modder-Friendly:** Structured loops (`for`, `while`), folded conditional expressions (`&&`, `||`), 1,748 named functions, and 194 named record types.
-* **Custom Hooking System:** Write your own C hooks around any game function without modifying original disassembly.
+> [!NOTE]
+> **Source code:** the complete decompiled C source (~97,000 lines of structured, typed, readable C with modding hooks and tools) is in final cleanup and will be open-sourced soon.
 
 ---
 
