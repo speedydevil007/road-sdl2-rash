@@ -56,11 +56,12 @@ The wide view and the draw distance only change what is drawn: a race plays out 
 
 ## In Every Mode
 
-* **Full controller support.** Xbox, PlayStation, Switch Pro and Steam Deck controllers work out of the box: analog steering, triggers for throttle and brake, and the game's own "Configure Input" screen for remapping.
+* **Full controller support.** Xbox, PlayStation, Switch Pro and Steam Deck controllers work out of the box: analog steering, triggers for throttle and brake, and the game's own "Configure Input" screen for remapping. Rumble on hits, collisions and crashes.
 * **Smooth scaling filter.** The picture is scaled to your display with a Catmull-Rom filter by default. Sharp, nearest, linear, integer scaling and CRT scanlines are in the options.
 * **Options menu (F1).** Fullscreen, filter, resolution, VSync, volumes, controller and more, changeable mid-race.
 * **Native performance.** The game's code runs directly on your CPU as compiled C, with no emulation layer in between.
-* **Faithful audio.** MIDI music through [TinySoundFont](https://github.com/schellingb/tinysoundfont) with the game's own AWE32 instrument banks and the GeneralUser GS SoundFont. Optional **in-race music** plays the soundtrack through the races.
+* **Faithful audio.** MIDI music through [TinySoundFont](https://github.com/schellingb/tinysoundfont) with the game's own AWE32 instrument banks and the GeneralUser GS SoundFont. Optional **in-race music** plays the soundtrack through the races. The menu music moves to the next song after each race, and you can pick another SoundFont (`.sf2`) in the options.
+* **Saved games.** Load Game and Save Game As open a list of your saves; a new save takes a typed name.
 * **Works with the Steam edition.** The files of *Road Rash* on Steam (the 30th Anniversary release) work as well as the 1996 CD's.
 * **Videos.** With the game's `VIDEO` folder copied in, the logos, the intro and the race videos play, decoded by the port itself.
 * **Checked against the original.** 14 scripted race replays must match the original game's results frame for frame before a build is released.

@@ -52,6 +52,10 @@ KEYS
                         any other key goes on
   Pause                 pauses a race (any key goes on)
   Letters, Ctrl, Shift, Space   the original game's other controls
+  Other keys for the race: Restroom, Configure Input (in the game's own menus).
+  Pick a control, then press the key you want for it. "Keyboard defaults"
+  there puts the keys back. The gamepad follows: its buttons press whatever
+  keys the controls have.
   F1 or Shift+F10       options (the game pauses while they are open)
   F10                   toggle HUD style (classic dashboard / minimal)
   F11 or Alt+Enter      fullscreen or window
@@ -73,12 +77,23 @@ OPTIONS (F1 / Shift+F10)
   16:9, more road on each side, the dashboard in the middle), draw distance (Plus mode
   only: far or farthest shows the road and scenery 48 or 64 strips ahead in place of
   32, fading into the distance, from the next race on), vsync, music and effects
-  volume, controller, in-race music (the soundtrack plays on through the races in
-  place of their MIDI music; off by default) and more.
+  volume, controller, controller rumble (hits, collisions and crashes), in-race music
+  (off by default: a song of the soundtrack starts with each race in place of its MIDI
+  music, and stops for the loading and the videos), menu music (the next song after
+  each race, or always the same one), SoundFont (the instruments of the MIDI music:
+  put other .sf2 files into port/assets and pick one; used from the next song) and
+  more. The list scrolls.
+
+SAVED GAMES (Restroom: Load Game, Save Game As)
+  Both open a list. Save Game As: type a name and press Enter, or pick a save
+  to replace. Load Game: pick a save. The saves are the .RRS files in
+  port/userdata/saves; a save from elsewhere is loaded by copying its .RRS
+  file there (or next to the program). Player Name in the Restroom takes a
+  typed name. The web edition has no list: it keeps one save.
 
 WHAT THE GAME WRITES
   Everything goes to port\userdata\ in this folder: roadrash.ini (options),
-  registry (the game's own stored options), saves\RoadRash.RRS (the career),
+  registry (the game's own stored options), saves\ (the saved careers),
   last_run.log (messages of the last run). To move your progress to another
   copy, copy port\userdata.
 
